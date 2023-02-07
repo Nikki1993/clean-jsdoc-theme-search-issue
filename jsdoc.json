@@ -1,0 +1,27 @@
+{
+  "source": {
+    "include": ["src"],
+    "includePattern": ".js$",
+    "excludePattern": "(node_modules/|docs)"
+  },
+  "templates": {
+    "default": {
+      "outputSourceFiles": false
+    }
+  },
+  "plugins": ["plugins/markdown"],
+  "opts": {
+    "readme": "./README.md",
+    "destination": "./jsdoc",
+    "tutorials": "./tutorials",
+    "template": "./node_modules/clean-jsdoc-theme",
+    "theme_opts": {
+      "default_theme": "dark",
+      "homepageTitle": "EB Map SDK"
+    }
+  },
+  "markdown": {
+    "hardwrap": false,
+    "idInHeadings": true
+  }
+}
